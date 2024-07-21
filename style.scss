@@ -1,0 +1,85 @@
+* {
+    font-family: "Inter", sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+$backgroundConteudo: hsl(0, 0%, 8%);
+$backgroundMain: hsl(0, 0%, 12%);
+$backgroundBotao: hsl(0, 0%, 20%);
+$destaque: hsl(75, 94%, 57%);
+$branca: #ffff;
+
+.conteudo {
+    height: 100vh;
+    width: 100%;
+
+    background-color: $backgroundConteudo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main {
+    background-color: $backgroundMain;
+
+    width: 400px;
+    height: 670px;
+    text-align: center;
+
+    border-radius: 15px;
+}
+
+#avatar {
+    height: 100px;
+    border-radius: 100px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#titulo {
+    color: $branca;
+    font-weight: 700;
+}
+
+#local {
+    color: $destaque;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#paragrafo {
+    color: $branca;
+    font-weight: 400;
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 50px;
+    width: 300px;
+
+    button {
+        background-color: $backgroundBotao;
+        color: $branca;
+        border: none;
+        margin-top: 20px;
+
+        height: 50px;
+        border-radius: 10px;
+        font-weight: 600;
+
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: $destaque;
+    }
+}
+
